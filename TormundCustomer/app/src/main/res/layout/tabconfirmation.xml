@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/tab5"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimario"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true">
+        <!-- LINEAR LAYOUT SCROLL !-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+            <!-- LINEAR LAYOUT SCROLL !-->
+
+            <LinearLayout
+                android:id="@+id/transparentShape"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+
+
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:text="CONFIRMACION"
+                    android:textSize="75px"
+                    android:textColor="#000"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/lineas_divisoras" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/cuadroconfirmacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_marginLeft="15dp"
+                android:background="@drawable/buttontransparent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/CheckTabServiceName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="45px"
+                    android:textColor="#000"
+                   />
+
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingLeft="40dp"
+                    android:layout_marginTop="45dp"
+                    android:background="@drawable/ic_map"/>
+
+                <TextView
+                    android:id="@+id/Suc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="50dp"
+                    android:text="Centrito Valle"
+                    android:textColor="@color/colorFont"
+                    android:textSize="15dp" />
+
+<TextView
+    android:layout_width="25dp"
+    android:layout_height="25dp"
+    android:paddingLeft="40dp"
+    android:layout_marginTop="75dp"
+    android:background="@drawable/ic_calendar"/>
+                <TextView
+                    android:id="@+id/CheckTabDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="75dp"
+                    android:text="Fecha:"
+                    android:textColor="@color/colorFont"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingLeft="40dp"
+                    android:layout_marginTop="105dp"
+                    android:background="@drawable/ic_time"/>
+
+                <TextView
+                    android:id="@+id/CheckTabDateInitHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="105dp"
+                    android:text="Comienza a las:"
+                    android:textColor="@color/colorFont"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingLeft="40dp"
+                    android:layout_marginTop="135dp"
+                    android:background="@drawable/ic_time"/>
+
+                <TextView
+                    android:id="@+id/CheckTabDateFInishedHour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="135dp"
+                    android:text="Termina a las:"
+                    android:textColor="@color/colorFont"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:paddingLeft="40dp"
+                    android:layout_marginTop="165dp"
+                    android:background="@drawable/ic_star"/>
+
+                <TextView
+                    android:id="@+id/CheckTabBarber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="35dp"
+                    android:paddingTop="168dp"
+                    android:text="Barbero:"
+                    android:textColor="@color/colorFont"
+                    android:textSize="15dp" />
+
+
+            </RelativeLayout>
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="70dp"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="TOTAL:"
+        android:textColor="@color/colorFont"
+        android:textSize="35dp" />
+    <TextView
+        android:id="@+id/CheckTabTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="205dp"
+        android:gravity="center"
+        android:paddingTop="5dp"
+        android:text="00.00"
+        android:textColor="@color/colorFont"
+        android:textSize="35dp" />
+
+</RelativeLayout>
+            <Button
+                android:onClick="onClickBtnConfirmationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="AGENDAR CITA"
+                android:layout_marginTop="20dp"
+                android:background="@color/colorSecundario"
+                android:textColor="@color/colorFont"
+                android:textSize="20dp"
+                />
+
+            <Button
+                android:onClick="onClickBtnConfirmationDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PAGAR"
+                android:layout_marginTop="1dp"
+                android:background="@color/colorTerciario"
+                android:textColor="@color/colorFont"
+                android:textSize="20dp"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+    </LinearLayout>
+

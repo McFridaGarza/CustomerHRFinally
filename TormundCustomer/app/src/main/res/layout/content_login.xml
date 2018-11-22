@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+                    android:paddingTop="60dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorTransparenteOscuro"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+             >
+
+
+        <ImageView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INICIAR SESION"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#000"
+            android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/user"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="60px"
+                android:background="@color/grayTransp"
+                android:ems="10"
+                android:hint="Correo Electronico"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/whiteOpaco"
+                android:textColorHint="@color/whiteOpaco" />
+
+
+            <EditText
+                android:id="@+id/Password"
+                android:layout_width="300dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/user"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/grayTransp"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+                android:textColor="@color/whiteOpaco"
+                android:textColorHint="@color/whiteOpaco" />
+
+        <Button
+            android:id="@+id/btnreg"
+            android:layout_width="250dp"
+            android:layout_height="70px"
+            android:layout_below="@+id/Pasw2"
+            android:layout_marginLeft="10px"
+            android:layout_marginTop="32px"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/holo_red_light"
+            android:text="CONTINUAR"
+            android:textAppearance="@style/TextAppearance.AppCompat"
+            android:textColor="?attr/colorBackgroundFloating" />
+
+
+            <LinearLayout
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:background="@color/colorOrange"
+                android:layout_gravity="center_horizontal">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:background="@color/colorTransparenteLight"
+                    android:layout_gravity="center_horizontal">
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/login_button"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+
+                        />
+
+                    <com.google.android.gms.common.SignInButton
+                        android:id="@+id/sign_in_button"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+
+                        />
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>

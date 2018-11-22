@@ -1,0 +1,25 @@
+<resources>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_services">Servicios</string>
+    <string name="nav_branches">Sucursales</string>
+    <string name="nav_barbers">Barberos</string>
+    <string name="nav_account">Mi cuenta</string>
+    <string name="nav_own_services">Mis Servicios</string>
+    <string name="nav_own_dates">Mis citas</string>
+    <string name="nav_products">Products</string>
+    <string name="title_activity_create_dates">CreateDatesActivity</string>
+    <string name="app_name">Tormund Stylist</string>
+    <string name="facebook_app_id">616477445090241</string>
+    <string name="fb_login_protocol_scheme">fb616477445090241</string>
+    <string name="logout">Salir</string>
+    <string name="title_activity_login_page">LoginPage</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="sucursales">Sucursales</string>
+    <string name="title_activity_branch_maps">Map</string>
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:weightSum="1"
+    android:background="@color/colorPrimario"
+    tools:context=".Activities.Dashboard.AppointmentsFragment"
+    android:orientation="vertical">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:layout_above="@id/ButtonAppointment"
+            android:layout_alignParentEnd="true"
+
+            >
+            <!-- LINEAR LAYOUT SCROLL !-->
+            <LinearLayout android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycler_appointment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@id/ButtonCamera">
+
+
+                </android.support.v7.widget.RecyclerView>
+
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    <Button
+        android:id="@+id/ButtonAppointment"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_centerHorizontal="false"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/button_background"
+        android:drawableLeft="@drawable/ic_baseline_event_24px"
+        android:drawableTint="#ffffff"
+        android:elevation="16dp"
+
+        android:paddingLeft="70dp"
+        android:text="Agendar Cita                   "
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        tools:fontFamily="@font/work_sans_semibold" />
+
+
+</RelativeLayout>

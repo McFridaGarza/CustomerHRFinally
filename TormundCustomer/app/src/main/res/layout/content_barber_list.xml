@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.Common.BarbersListActivity"
+    tools:showIn="@layout/activity_barbers_list"
+    android:background="@color/colorPrimario"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+android:background="@color/colorPrimario"
+        >
+        <!-- Header Menu -->
+        <LinearLayout
+            android:id="@+id/seccion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="12dp"
+            android:gravity="center_horizontal"
+            android:background="@color/pantone_419_c">
+            <ImageView
+                android:id='@+id/imgHeaderEmployees'
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:src="@drawable/tormoundstylist"
+                />
+
+
+
+
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerBarberList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorPrimario"
+            android:scrollbars = "vertical"
+
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/pantone_419_c"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Activities.Dates.DatesBrunchActivity"
+    tools:showIn="@layout/activity_dates_brunch"
+    android:orientation="vertical">
+
+    <!-- Header Menu -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"        >
+        <LinearLayout
+            android:id="@+id/seccion1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="16dp"
+            android:orientation="vertical"
+            android:background="@color/colorOrange">
+
+            <ImageView
+                android:id='@+id/ProfileView'
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:layout_marginLeft="25dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingTop="4dp"
+                android:paddingLeft="50dp"
+                android:paddingBottom="10dp"
+                android:orientation="vertical">
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TabHost android:id="@android:id/tabhost"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="50dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TabWidget android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@android:id/tabs" />
+
+                    <FrameLayout android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@android:id/tabcontent" >
+                        <!-- TAB1/ BRANCH  -->
+                        <include
+                            layout="@layout/tabbranch"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        <!-- TAB2/ SERVICES  -->
+
+                        <include
+                            layout="@layout/tabservices"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <!-- TAB3/ BARBERS  -->
+                        <include
+                            layout="@layout/tabbarbers"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <!-- TAB4/ DATE  -->
+
+                        <include
+                            layout="@layout/tabdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <!-- TAB5/ CONFIRMATION  -->
+                        <include
+                            layout="@layout/tabconfirmation"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                    </FrameLayout>
+                </LinearLayout>
+            </TabHost>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimario"
+    android:id="@+id/linear_appointment"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+       >
+
+        <ImageView
+            android:id="@+id/imageBarber"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:paddingTop="20dp"
+            android:paddingLeft="60dp"
+            android:paddingRight="60dp"
+            android:src="@drawable/barbe"
+                />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/BarberName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="asdfasdfjhgjhjhgjhgjhghjgjhhg"
+                android:textColor="@color/colorFont"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/appointmentHorary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="30dp"
+                android:text="10/Ago 8:20 a 4:50"
+                android:textColor="@color/colorFont"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/AppointmentBranchName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingRight="25dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorFont"
+                android:textSize="20dp"/>
+
+
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
